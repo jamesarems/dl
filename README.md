@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+## DL  - Downloader for Linux Terminal
 
-You can use the [editor on GitHub](https://github.com/jamesarems/dl/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+##### Beta release
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+* Much faster than regular downloaders [Tested].
 
-### Markdown
+* CLI Knowledge rquire , but simple to use.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* Program works under python 3+ ( May not be work > 2.x)
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+Principle
+---------
 
-- Bulleted
-- List
+For regular download we use curl or wget . These programs support threads but for newbies its very hard to calculate and use it. In this program i used curl as backend.
+While you download , downloader split your target file to multiple chunks and calculate its bytes and directly download from that stream. 
 
-1. Numbered
-2. List
+Example :   `dl http://www.example.com/os.iso 10`
 
-**Bold** and _Italic_ and `Code` text
+This command will download os.iso using 10 threads. Each 10 threads download a range of data from the source and merge together. 
 
-[Link](url) and ![Image](src)
-```
+Installation
+------------
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+git clone https://github.com/jamesarems/dl.git
 
-### Jekyll Themes
+cd dl ; sudo mv dl.py /usr/bin/dl
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jamesarems/dl/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
