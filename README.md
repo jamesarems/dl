@@ -22,8 +22,16 @@ This command will download os.iso using 10 threads. Each 10 threads download a r
 Installation
 ------------
 
-git clone https://github.com/jamesarems/dl.git
+* Clone repository to your system
 
-cd dl ; sudo mv dl.py /usr/bin/dl
+`git clone https://github.com/jamesarems/dl.git`
+
+* Move program file to system binary
+
+`cd dl ; mv dl.py /usr/bin/dl`
+
+
+Thats it!
+
 
 

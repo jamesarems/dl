@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 ## License OpenSource
 ## Author : James PS
 ## This is an attempt to introduce new fast downloaded for Unix system
